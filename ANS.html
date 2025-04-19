@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity
+        position="0 0.5 -3"
+        geometry="primitive: dodecahedron; radius: 0.5"
+        material="color: #FFC65D; metalness: 0.4; roughness: 0.2">
+      </a-entity>
+      <a-box
+        position="0 1.75 -3"
+        depth="1"
+        height="1.5"
+        width="1"
+        color="#4CC3D9">
+      </a-box>
+      <a-cone
+        position="0 3 -3"
+        radius-bottom="0.5"
+        radius-top="0"
+        height="1"
+        color="#AA00FF">
+      </a-cone>
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="6"
+        height="6"
+        color="#7BC8A4">
+      </a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
